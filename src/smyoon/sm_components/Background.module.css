@@ -1,0 +1,67 @@
+
+.back_img_01,
+.back_img_02,
+.back_img_03,
+.back_img_04 {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.back_img_01{
+    animation-name: back_img_01;
+}
+.back_img_02{
+    animation-name: back_img_02;
+}
+.back_img_03{
+    animation-name: back_img_03;        
+}
+.back_img_04{
+    animation-name: back_img_04;
+}
+
+@keyframes back_img_01 {
+     0%     { opacity: 1; }
+    25%     { opacity: 1; }
+    27%     { opacity: 0.3; }
+    29%     { opacity: 0; }
+    100%    { opacity: 0; }
+}
+
+@keyframes back_img_02 {
+     0%     { opacity: 0; }
+    24%     { opacity: 0; }
+    26%     { opacity: 0.3; }
+    29%     { opacity: 1; }
+    49%     { opacity: 1; }
+    51%     { opacity: 0.3; }
+    53%     { opacity: 0; }
+    100%    { opacity: 0; }
+}
+
+@keyframes back_img_03 {
+     0%     { opacity: 0; }
+    48%     { opacity: 0; }
+    50%     { opacity: 0.3; }
+    52%     { opacity: 1; }
+    74%     { opacity: 1; }
+    76%     { opacity: 0.3; }
+    78%     { opacity: 0; }
+    100%    { opacity: 0; }
+}
+
+@keyframes back_img_04 {
+     0%     { opacity: 0; }
+    73%     { opacity: 0; }
+    75%     { opacity: 0.3; }
+    77%     { opacity: 1; }
+    100%    { opacity: 1; }
+}

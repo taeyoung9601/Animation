@@ -1,0 +1,38 @@
+.waterfilter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+
+    animation-name: water;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+
+
+.water{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+}
+
+.img{
+    position: relative;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@keyframes water{
+    0% { background-color: #000033; opacity: 0.3;} 
+    25% { background-color: #94ddf5; opacity: 0.1;}
+    60% { background-color: #94ddf5; opacity: 0.1;} 
+    80% { background-color: #fa7544; opacity: 0.3;} 
+    85% { background-color: #000033; opacity: 0.3;}  
+    100% { background-color: #000033; opacity: 0.3;} 
+}

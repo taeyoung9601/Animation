@@ -1,0 +1,27 @@
+
+.spring {
+    position: absolute;
+    bottom: 5vh;
+    left: 40%;
+    
+    animation-name: spring_img_01;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+} 
+.spring:hover {
+
+} 
+.spring_img_01 {
+    width: 300px;
+}
+
+@keyframes spring_img_01 {
+      0%  { opacity:  1; bottom: 25vh;left: 50%; transform: rotate(0deg) scale(1.2);}
+     40%  { opacity:  1; bottom: 40vh;left: 25%; transform: rotate(0deg) scale(0.9);}
+     50%  { opacity:  1; bottom: 60vh;left: 10%; transform: rotate(10deg) scale(0.7);}
+     52%  { opacity:  1;              left: 10%; transform: rotate(15deg) scale(0.7);}
+     53%  { opacity:  1;}
+    100%  { opacity:  0;  bottom: 80vh;left: 85%; transform: rotate(25deg) scale(0.68);}
+}

@@ -1,0 +1,159 @@
+.dra {
+    position: absolute;
+
+ z-index: inherit;
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+
+  animation-name: dra;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+
+
+}
+
+  
+  .bul {
+    position: absolute;
+   z-index: 3;
+  
+    width:15%;
+    height: 15%;
+    object-fit: contain;
+  
+  
+    /* margin-left: -100px;
+  
+    transform: center 500px; */
+  
+    animation-name: bul;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-outs;
+    animation-iteration-count: infinite;
+  
+    transform-origin: bottom center; 
+  
+  }
+  
+  .badac {
+    position: absolute;
+
+    right: 20%;
+    top: 58%;
+
+    z-index: 10;
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+  
+
+    animation-name: badac;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    transform-origin: bottom center; 
+  
+  }
+  
+  
+  
+  @keyframes dra {
+    0% {
+      right: 10%;
+      top: 10%;
+      width: 20%;
+      height: 20%;
+      transform: scale(0.5) translate(0, 0); /* 작은 크기로 시작, 우측 상단 */
+    }
+    50% {
+      right: 18%;
+      top: 28%;
+     
+      transform: scale(.8) ; /* 중앙으로 이동, 크기 커짐 */
+    }
+    100% {
+  
+      top: -100%;
+    
+      transform: scale(2) translate(0, 0); 
+    }
+  }
+
+
+  @keyframes bul {
+    0% { 
+      opacity: 0;
+      right: 21%;
+      top: 28%;
+        transform: scale(0) translate(0, 0);
+      }
+
+      50%{ opacity: 0;
+        transform: scale(0.8) translate(0, 0);}
+      51% {
+        opacity: 1;
+        right: 22%;
+        top: 28%;
+       
+        transform: scale(1) ; 
+      }
+      70% {
+        right:22%;
+        top: 58%;
+        /* 숫자가 낮을 수록 위로. top에서 위에서부터1%~100% */
+      
+        transform: scale(1) translate(0, 0); 
+      }
+      71% {
+
+        opacity: 1;
+      }
+      72% {
+      
+        opacity: 0;
+        transform: scale(.5) translate(0, 0); 
+      }
+        100% {
+      
+          opacity: 0;
+      }
+  }
+  
+
+
+  @keyframes badac {
+  0% {
+    right: 20%;
+    top: 58%;
+    opacity: 0;
+}
+  65% {
+
+    opacity: 0;
+}
+
+66% {
+  opacity: 1;
+      right: 10%;
+      top: 10%;
+      /* 숫자가 낮을 수록 위로. top에서 위에서부터1%~100% */
+      right: 20%;
+      top: 58%;
+      transform: scale(1) translate(0, 0); 
+    
+}
+94% {
+
+  opacity: 1;
+}
+95% {
+
+  opacity: 0;
+}
+  100% {
+
+    opacity: 0;
+}}

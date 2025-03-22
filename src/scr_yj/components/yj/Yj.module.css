@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+KR&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Orbit&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+.daybyday {
+    
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+
+    overflow-x: hidden;
+
+    animation-name: skyy;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.dbd {
+    
+    width: 1000px;
+    height: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -70%);
+}
+
+h1 {
+    font-family:  "Roboto", sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+
+    width: 1000px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    color: #fff;
+
+    transform: translate(-50%, 190%);
+}
+
+.sky {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+.s {
+    position: relative;
+    top: -130px;
+   
+
+    animation-name: sunn;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+
+}
+
+.mo {
+    position: relative;
+    bottom: 310px;
+
+    animation-name: moonn;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    
+}
+
+
+
+.c {
+    position: absolute;
+    bottom: 104px;
+    left: 50%;
+
+    margin-left: -105px;
+    opacity: .7;
+
+    animation-name: rotationn;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.tn {
+    position: absolute;
+    bottom: 2px;
+    left: 30px;
+}
+
+.td {
+    position: absolute;
+    bottom: 2px;
+    left: 30px;
+}
+
+.p {
+    width: 100%;
+    height: 100%;
+
+
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+
+    animation-name: dayy;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.town {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.p1, .p2, .p3, .l {
+    width: 25%;
+}
+
+.p2 {
+    margin-top: 200px;
+}
+
+.p3 {
+    margin-top: 154px;
+}
+
+.l {
+    margin-top: 146px;
+}
+
+.p1 {
+    margin-top: 153px;
+}
+
+.moving {
+    width: 100%;
+}
+
+.dog {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+
+  
+    animation-name: floww3;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.wo {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+
+  
+    animation-name: floww2;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+
+/* ============================================================== */
+
+
+@keyframes skyy {
+    0%      { background-color: #c1a1df; }
+    25%     { background-color: #a9eff0; }
+    50%     { background-color: #ff9100; }
+    75%     { background-color: #24273a; }
+    100%    { background-color: #07020a; }
+}
+
+@keyframes sunn {
+    0%      { opacity: 0; translate: 0% }
+    50%     { opacity: 1; translate: 20%}
+    75%     { opacity: 0; translate: 40%}
+    100%     { opacity: 0; translate: 40%}
+
+}
+
+
+@keyframes moonn {
+    0%     { opacity: 0; translate: 0%; }
+    25%     { opacity: 0; translate: 25%; }
+    60%     { opacity: 0; translate: 50%; }
+    85%     { opacity: 1; translate: 100%; }
+    100%    { opacity: 0; translate: 100%; }
+}
+
+@keyframes dayy {
+    0%      { opacity: 0; }
+    25%     { opacity: 1; }
+    50%     { opacity: 1; }
+    75%     { opacity: 0; }
+    100%    { opacity: 0; }
+}
+
+
+@keyframes floww2 {
+    0%   { opacity: .3;}
+    30%  { opacity: .7;}
+    75% { opacity: 1;}
+    100% { opacity: 0; transform: translateX(100vw);  }
+}
+
+@keyframes floww3 {
+    0%   { opacity: .3; transform: translateX(0); }
+    50%  { opacity: .7; transform: translateX(15); }
+    75% { opacity: 1; transform: translateX(20vw); }
+    100% { opacity: 0; ; }
+}
+
+
+
+
+
+
+
+

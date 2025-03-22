@@ -1,0 +1,94 @@
+.people {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .man {
+    /* display: none; */
+    /* border: 1px dotted #999; */
+
+    /* --- */
+
+    /* 부모요소를 position: absolute; 로 지정하고, 자식요소도 position: absolute;로 지정하면,
+    부모요소 영역에, 그대로 자식요소의 영역을 겹치게 할 수 있음. */
+    position: absolute;
+    left: 0%;
+    bottom: 28vh;
+    transform: translateX(-50%);
+
+    /* --- */
+
+    /* 
+        Usage - animation: 
+                    (1) name
+                    (2) duration
+                    (3) timing-function
+                    (4) delay
+                    (5) iteration-count
+                    (6) direction
+                    (7) fill-mode;
+    */
+
+    /* animation: flow 20s linear infinite; */
+    animation-name: mann;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%); */
+  }
+  .family {
+    position: absolute;
+    bottom: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    animation-name: famm;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+
+  .ghost {
+  position: absolute;
+  bottom: 28%;
+  left: 60%;
+  transform: translateX(70%);
+
+  width: 10%;
+  height: 20%;
+  object-Fit: cover;
+
+  animation-name: gho;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes mann {
+    0%      { left: 0px; opacity: 0; }
+    10%     { opacity: 1; }
+    80%     { opacity: 1; }
+    100%    { left: 150%; opacity: 0; }
+}
+
+@keyframes famm {
+  0%      { left: 0px; opacity: 0; }
+  10%     { opacity: 1; }
+  79%     { left: 60%;opacity: 1; }
+  80%     { opacity: 0; }
+  90%     { opacity: 0; }
+  100%    { left: 80%; opacity: 0; }
+}
+@keyframes gho {
+  0%      { bottom: 0px; opacity: 0; }
+  10%     { opacity: 0; }
+  80%     { opacity: 0; }
+  90%     { opacity: 1; }
+  100%    { bottom: 30%; opacity: 1; }
+}

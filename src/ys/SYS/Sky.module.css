@@ -1,0 +1,188 @@
+.sky {
+  /* animation: sky 20s linear infinite; */
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.sun {
+  position: absolute;
+  bottom: -10vh;
+  left: 50%;
+
+
+  object-Fit: cover;
+
+
+  margin-left: -100px;
+
+  transform: center 500px;
+
+  animation-name: sun;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transform-origin: bottom center; 
+
+}
+
+.moon {
+  position: absolute;
+  bottom: -10vh;
+  left: 50%;
+
+  width: 10%;
+  height: 20%;
+  object-Fit: cover;
+
+
+  margin-left: -100px;
+
+  transform: center 500px;
+
+  animation-name: moon;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  transform-origin: bottom center; 
+
+}
+
+
+.cloud1 {
+  position: absolute;
+  top: 20%;
+
+  left: 20%;
+  animation-name: flow1;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 20%;
+
+  left: 0%;
+  animation-name: flow2;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+/* translateY(-180vh) */
+/* @keyframes sun {
+  0%      { transform: rotate(0deg); }
+  100%    { transform: rotate(360deg); }
+} */
+
+
+@keyframes flow1 {
+  0%      { left: 0px; opacity: 0; }
+  10%     { opacity: 1; }
+  80%     { opacity: 1; }
+  100%    { left: 90%; opacity: 0; }
+}
+@keyframes flow2 {
+  0%      { left: 0px; opacity: 0; }
+  10%     { opacity: 1; }
+  80%     { opacity: 1; }
+  100%    { left: 90%; opacity: 0; }
+}
+
+
+@keyframes sun{
+    0% {
+        transform: rotate(20deg)  
+        translateY(110vh);
+    }
+    25% {
+        transform: rotate(110deg)  
+        translateY(110vh);
+    }
+    50% {
+        transform: rotate(180deg) 
+         translateY(110vh);
+    }
+    75% {
+        transform: rotate(270deg) 
+        translateY(110vh) 
+      
+    }
+  100% {
+    transform: rotate(360deg) 
+    translateY(110vh);
+}
+    
+    0% {
+
+      opacity: 1;
+  }
+    25% {
+
+      opacity: 1;
+  }
+    50% {
+
+      opacity: 1;
+  }
+    75% {
+
+      opacity: 0;
+  }
+    100% {
+
+      opacity: 0;
+  }
+
+}
+
+@keyframes moon{
+  0% {
+      transform: rotate(200deg)  
+      translateY(110vh);
+  }
+  25% {
+      transform: rotate(290deg)  
+      translateY(110vh);
+  }
+  50% {
+      transform: rotate(380deg) 
+       translateY(110vh);
+  }
+  75% {
+      transform: rotate(470deg) 
+      translateY(110vh);
+  }
+  100% {
+      transform: rotate(560deg) 
+      translateY(110vh);
+  }
+  0% {
+
+    opacity: 1;
+}
+  25% {
+
+    opacity: 1;
+}
+  50% {
+
+    opacity: 0;
+}
+  75% {
+
+    opacity: 0;
+}
+  100% {
+
+    opacity: 1;
+}
+
+}
